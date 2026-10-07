@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portafolio de Borix Quiroz
 
-## Getting Started
+Sitio personal para presentar proyectos de backend, ciencia de datos e IoT, junto con experiencia, formación y contacto.
 
-First, run the development server:
+**Sitio:** [portafolio-topaz-mu.vercel.app](https://portafolio-topaz-mu.vercel.app)
+
+## Características
+
+- Contenido en español e inglés.
+- Secciones de presentación, proyectos, logros, experiencia, habilidades y contacto.
+- Detalle de proyectos mediante ventanas modales.
+- Currículum disponible desde el sitio.
+
+## Tecnologías
+
+Next.js, React, TypeScript y Tailwind CSS. Las animaciones utilizan Framer Motion y canvas-confetti; los iconos, Lucide React.
+
+## Desarrollo local
+
+Requiere Node.js y npm compatibles con las dependencias de `package.json`.
 
 ```bash
+git clone https://github.com/BorixQ/Portafolio.git
+cd Portafolio
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Comandos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Comando | Función |
+| --- | --- |
+| `npm run dev` | Inicia el servidor de desarrollo. |
+| `npm run lint` | Ejecuta ESLint. |
+| `npm run build` | Genera la compilación de producción. |
+| `npm start` | Sirve la compilación de producción. |
 
-## Learn More
+## Personalizar el contenido
 
-To learn more about Next.js, take a look at the following resources:
+| Ruta | Contenido |
+| --- | --- |
+| `src/data/portfolioData.ts` | Datos personales, proyectos, logros, experiencia y enlaces. |
+| `src/context/LanguageContext.tsx` | Contexto del idioma. |
+| `src/components/` | Secciones y componentes visuales. |
+| `src/app/page.tsx` | Composición de la página principal. |
+| `src/app/globals.css` | Estilos globales. |
+| `public/cv-borix-quiroz.pdf` | Currículum descargable. |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Proyectos relacionados
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Terranode / Queñaris MVP](https://github.com/BorixQ/quenaris_mvp)
+- [Queñaris — análisis de datos](https://github.com/BorixQ/QuenarisDA)
+- [AuthCares — Wear OS](https://github.com/BorixQ/AuthCaresLogger)
+- [AuthCares — ESP32](https://github.com/BorixQ/AuthCares-ESP32)
+- [RESERSUR](https://github.com/BorixQ/resersur)
